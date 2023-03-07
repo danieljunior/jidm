@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 
 def main():
-    path = "data/respostas_especialistas"
+    path = "data/survey_domain_specialists"
     survey_responses_df = []
     for file in os.listdir(path):
         survey_responses_df.append(handle_survey_responses(path + '/' + file))

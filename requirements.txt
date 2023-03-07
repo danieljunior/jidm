@@ -1,13 +1,11 @@
 -i https://pypi.python.org/simple
--f https://download.pytorch.org/whl/torch_stable.html
 numpy
 pandas==1.2.4
+matplotlib==3.1.1
 nltk==3.4.5
 tqdm
-fasttext
-transformers==3.0.2
-torch==1.6.0+cpu
-NLPyPort==2.2.4
-ray
 scikit-learn
 seaborn
+wordcloud==1.8.2.2
+krippendorff
+jupyterlab

@@ -1,9 +1,9 @@
-FROM python:3.7.15-slim-bullseye
+FROM continuumio/anaconda3:2022.10
 LABEL author=DanielJunior email="danieljunior@id.uff.br"
 
 RUN apt-get --allow-releaseinfo-change update && \
     apt-get install -y --no-install-recommends apt-utils && \
-    apt-get -y install gcc g++ nano build-essential libprocps-dev procps locales
+    apt-get -y install gcc g++ nano build-essential libprocps-dev procps locales curl
 
 ENV LANG pt-BR.UTF-8
 ENV LANGUAGE pt-BR.UTF-8
