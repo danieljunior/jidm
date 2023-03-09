@@ -1,11 +1,9 @@
--i https://pypi.python.org/simple
 numpy
 pandas==1.2.4
-matplotlib==3.1.1
+matplotlib
 nltk==3.4.5
 tqdm
 scikit-learn
 seaborn
 wordcloud==1.8.2.2
 krippendorff
-jupyterlab

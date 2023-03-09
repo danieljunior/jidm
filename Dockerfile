@@ -14,8 +14,14 @@ COPY requirements.txt /app/requirements.txt
 
 WORKDIR /app
 
-RUN pip install --upgrade pip && \
-    pip install --ignore-installed --no-cache-dir -r requirements.txt 
+# Make RUN commands use `bash --login`:
+SHELL ["/bin/bash", "--login", "-c"]
+
+RUN conda create -y -n jidm && \
+    conda init bash && \
+    conda activate jidm && \
+    conda install pip && \
+    pip install --ignore-installed --no-cache-dir -r requirements.txt
 
 RUN rm -rf /var/lib/apt/lists/* && apt-get clean
 
