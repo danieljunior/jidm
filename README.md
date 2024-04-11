@@ -1,4 +1,5 @@
 # Datasets for Portuguese Legal Semantic Textual Similarity
+## Data available at: https://osf.io/mct8s/
 
 ## Running 
 
