@@ -1,19 +1,19 @@
-# JIDM submission
+# Datasets for Portuguese Legal Semantic Textual Similarity
 
-## Execução 
+## Running 
 
-#### Construção da imagem
+#### Build docker image
 - `docker build -t jidm .`
 
-#### Iniciar containers
+#### Start containers
 
 - `docker run --rm --shm-size="2g" -v ${PWD}:/app -w /app -p 8888:8888 --name jidm -itd jidm bash`
 
-#### Acessar container
+#### Access container
 - `docker exec -it jidm bash`
 
-#### Iniciar jupyter notebook
+#### Start jupyter notebook
 - `jupyter lab --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token='jidm' &`
 
-#### Acessar o jupyter notebook
+#### Access jupyter notebook
 - http://localhost:8888/lab
